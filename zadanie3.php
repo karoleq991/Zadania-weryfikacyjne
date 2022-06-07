@@ -2,10 +2,9 @@
 
 function fun($A)
 {
-
     for ($i = 1; $i <= count($A); $i++) {
         if (!in_array($i, $A))
-            return 0;
+            return false;
     }
-    return 1;
+    return true;
 }
